@@ -1,8 +1,49 @@
-<p>Hello 大家好</p>
-<p>我是霸都丶傲天，这是我的个人网站。 </p>
-<p>很高兴你来到这里, 你可以在以下的网站找到我</p>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>小火箭之家-给梦想以自由</title>
+<style>
+  body {
+    background-color: red;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+    font-family: Arial, sans-serif;
+    color: white;
+  }
+</style>
+</head>
+<body>
+  <div>
+    <h2>小火箭之家，给梦想以自由</h2>
+    <p>小火箭之家最新网址将会在<span id="countdown">5</span>秒内跳转，如果家人们更新不出来节点，还望重新获取订阅链接。</p>
+  </div>
 
-<ul>
-  <li> <a href="https://www.zhihu.com/people/AJLoveChina">知乎</a> </li>
-  <li> <a href="http://hejie.nigeerhuo.com">我的博客(已经不更细了,现在在知乎写文章)</a> </li>
-</ul> 
+  <script>
+    // 倒计时函数
+    function countdown() {
+      var seconds = 5;
+      var countdownElement = document.getElementById("countdown");
+
+      var countdownInterval = setInterval(function() {
+        seconds--;
+        countdownElement.textContent = seconds;
+
+        if (seconds <= 0) {
+          clearInterval(countdownInterval);
+          window.location.href = "http://www.xhjcloud.cc";
+        }
+      }, 1000);
+    }
+
+    // 页面加载完毕后开始倒计时
+    document.addEventListener("DOMContentLoaded", countdown);
+  </script>
+</body>
+</html>
