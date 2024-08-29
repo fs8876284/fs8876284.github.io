@@ -6,7 +6,6 @@
 <title>小火箭之家-给梦想以自由</title>
 <style>
   body {
-    background-color: #e84144;
     margin: 0;
     padding: 0;
     display: flex;
@@ -14,42 +13,86 @@
     align-items: center;
     height: 100vh;
     text-align: center;
-    font-family: Arial, sans-serif;
-    color: #fff;
+    font-family: 'Roboto', sans-serif;
+    color: #e0e0e0;
+    background: #1b1b1b;
+    overflow: hidden;
+    position: relative;
+  }
+
+  /* 背景动画 */
+  .background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(circle, rgba(0,0,0,0.2), rgba(0,0,0,0.6));
+    z-index: -1;
+    animation: animateBG 40s linear infinite;
+  }
+
+  @keyframes animateBG {
+    0% {background-position: 0% 0%;}
+    50% {background-position: 100% 100%;}
+    100% {background-position: 0% 0%;}
   }
 
   h2 {
-    color: #fff;
-    font-size: 50px;
-    line-height: 80px;
-    margin-bottom: 0;
+    color: #c0c0c0;
+    font-size: 2.5rem;
+    line-height: 1.2;
+    margin-bottom: 1rem;
+    text-shadow: 0 0 6px rgba(255, 255, 255, 0.2);
   }
 
   p {
-    font-family: 'Karla', sans-serif;
-    font-size: 18px;
-    margin-bottom: 30px;
+    font-size: 1.2rem;
+    margin-bottom: 1.5rem;
+    max-width: 80%;
+    line-height: 1.6;
+    color: #d0d0d0;
+    text-shadow: 0 0 4px rgba(255, 255, 255, 0.2);
   }
 
+  #countdown {
+    font-size: 2.5rem;
+    color: #ff007f;
+    font-weight: bold;
+    animation: pulse 1.5s infinite;
+  }
+
+  @keyframes pulse {
+    0% {transform: scale(1);}
+    50% {transform: scale(1.1);}
+    100% {transform: scale(1);}
+  }
+
+  @media (max-width: 600px) {
+    h2 {
+      font-size: 2rem;
+    }
+
+    p {
+      font-size: 1rem;
+    }
+
+    #countdown {
+      font-size: 1.5rem;
+    }
+  }
 </style>
 </head>
-  <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-Y3RB73MY8C"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-Y3RB73MY8C');
-</script>
 <body>
+  <div class="background"></div>
   <div>
     <h2>小火箭之家 - 给梦想以自由</h2>
-    <p>最新网址将会在<span id="countdown" style="font-size: 24px; color: yellow;">5</span>秒内跳转，如果家人们更新不出来节点，还望重新获取订阅链接。</p >
-    <p>自由之风欲飘蓬，<br>
-    翱翔九天任我行。<br>
-    浩然正气凌霄汉，<br>
-    心中梦想永相随。</p>
+    <p>您即将跳转到新的网络节点，<br>
+    请耐心等待，倒计时<span id="countdown">5</span>秒内完成切换。<br>
+    如果遇到问题，请检查您的网络连接或尝试重新获取节点链接。</p>
+    <p>最新节点网址正在获取，<br>
+    我们始终提供更高效的服务和更多功能。<br>
+    感谢您的耐心等待，我们的系统将提供更稳定的体验。</p>
   </div>
 
   <script>
