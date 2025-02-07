@@ -3,12 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>聚合导航</title>
+    <title>聚合导航-指引回家的方向</title>
+    <meta name="keywords" content="导航, 网站, 链接, 常用网站, 搜索引擎, 视频网站, 社交媒体">
+    <meta name="description" content="常用网站导航，包含搜索引擎、视频网站、社交媒体等分类，方便您快速找到所需网站。">
     <style>
         body {
             font-family: sans-serif;
             margin: 20px;
             background-color: #f4f4f4;
+            display: flex; /* 使用 Flexbox 布局 */
+            justify-content: center; /* 水平居中 */
+        }
+        .container {
+            width: 960px; /* 设置内容区域宽度 */
         }
         h1 {
             text-align: center;
@@ -52,58 +59,59 @@
 </head>
 <body>
 
-    <h1>常用网站导航</h1>
+    <div class="container">
+        <h1>常用网站导航</h1>
 
-    <div class="category">
-        <h2>搜索引擎</h2>
-        <ul class="nav-list">
-            <li class="nav-item">
-                <a href="https://www.google.com">谷歌</a>
-                <p>全球最大的搜索引擎，提供各种搜索服务。</p>
-            </li>
-            <li class="nav-item">
-                <a href="https://www.baidu.com">百度</a>
-                <p>中国最大的搜索引擎，提供中文搜索服务。</p>
-            </li>
-        </ul>
-    </div>
+        <div class="category">
+            <h2>搜索引擎</h2>
+            <ul class="nav-list">
+                <li class="nav-item">
+                    <a href="https://www.google.com">谷歌</a>
+                    <p>全球最大的搜索引擎，提供各种搜索服务。</p>
+                </li>
+                <li class="nav-item">
+                    <a href="https://www.baidu.com">百度</a>
+                    <p>中国最大的搜索引擎，提供中文搜索服务。</p>
+                </li>
+            </ul>
+        </div>
 
-    <div class="category">
-        <h2>视频网站</h2>
-        <ul class="nav-list">
-            <li class="nav-item">
-                <a href="https://www.youtube.com">YouTube</a>
-                <p>全球最大的视频分享网站，提供各种视频内容。</p>
-            </li>
-            <li class="nav-item">
-                <a href="https://v.qq.com">腾讯视频</a>
-                <p>中国领先的视频网站，提供电影、电视剧、综艺等内容。</p>
-            </li>
-        </ul>
-    </div>
+        <div class="category">
+            <h2>视频网站</h2>
+            <ul class="nav-list">
+                <li class="nav-item">
+                    <a href="https://www.youtube.com">YouTube</a>
+                    <p>全球最大的视频分享网站，提供各种视频内容。</p>
+                </li>
+                <li class="nav-item">
+                    <a href="https://v.qq.com">腾讯视频</a>
+                    <p>中国领先的视频网站，提供电影、电视剧、综艺等内容。</p>
+                </li>
+            </ul>
+        </div>
 
-    <div class="category">
-        <h2>社交媒体</h2>
-        <ul class="nav-list">
-            <li class="nav-item">
-                <a href="https://www.facebook.com">Facebook</a>
-                <p>全球最大的社交网络平台，提供社交互动服务。</p>
-            </li>
-            <li class="nav-item">
-                <a href="https://www.twitter.com">Twitter</a>
-                <p>全球知名的微博客平台，提供实时信息分享服务。</p>
-            </li>
-        </ul>
-    </div>
-
-    <div class="category">
-        <h2>常用工具</h2>
-        <ul class="nav-list">
-            <li class="nav-item">
-                <a href="https://aa.cloud666.cc">六六云</a>
-                <p>六六云-给梦想以自由，提供最新Hy2协议节点的网站。</p>
-            </li>
-        </ul>
+        <div class="category">
+            <h2>社交媒体</h2>
+            <ul class="nav-list">
+                <li class="nav-item">
+                    <a href="https://www.facebook.com">Facebook</a>
+                    <p>全球最大的社交网络平台，提供社交互动服务。</p>
+                </li>
+                <li class="nav-item">
+                    <a href="https://www.twitter.com">Twitter</a>
+                    <p>全球知名的微博客平台，提供实时信息分享服务。</p>
+                </li>
+            </ul>
+        </div>
+				<div class="category">
+			<h2>常用工具</h2>
+			<ul class="nav-list">
+				<li class="nav-item">
+					<a href="https://aa.cloud666.cc">六六云</a>
+					<p>六六云-给梦想以自由，提供最新Hy2协议节点的网站。</p>
+				</li>
+			</ul>
+		</div>
     </div>
 
 </body>
